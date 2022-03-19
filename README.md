@@ -1,7 +1,7 @@
 # guessing_game
 Guessing Game based on the second chapter of "The Rust Programming Language" by Steve Klabnik & Carol Nichols.
-This is my first real exploration into Rust
-Please give any feedback on better ways to accomplish the same goals here
+This is my first real exploration into Rust.
+Please give any feedback on better ways to accomplish the same goals here.
 
 # Versions
 - rustup 1.24.3
