@@ -1,3 +1,6 @@
+// Modified the guessing game project from "The Rust Programming Language"
+// Check out the book https://doc.rust-lang.org/book/
+// All feedback happily welcomed
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
@@ -10,18 +13,15 @@ fn main() {
     let secret_number = rand::thread_rng().gen_range(1, 26); //lower bound is inclusive but the upper bound is exclusive
 
     let mut turn = 1;
-    //println!("The secret number is: {}", secret_number);
 
     loop {
         println!("Please input your guess");
-
-        //let mut turn = 0;
 
         let mut guess = String::new(); //declaring a mutable(changeable) variable as a string
 
         io::stdin()
             .read_line(&mut guess)
-            .expect("Failed to read line"); //executes the read_line. On OK it assigns the read to guess. on Err it uses the expect
+            .expect("Failed to read line");
 
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
